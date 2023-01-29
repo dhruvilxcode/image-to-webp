@@ -13,10 +13,21 @@ const tmpdir = os.tmpdir();
 // grant permission to cwebp
 grantPermission(cwebp());
 
-/****
- * @description
- * @params 
- */
+
+/**
+ * Converts image to WebP
+ * @param {string} imagePath input image path to convert to WebP
+ * @param {number} quality (optional) 0 to 100, default value is 80. 100 for less Compression, 0 for High compression and less quality.
+ * @returns {Promise<string>} converted WebP file path 
+ * @example
+ * ```javascript
+ * const outputFilePath = await convertToWebp.imageToWebp({
+ *   imagePath: "./myimg.jpeg",
+ *   quality: 80,
+ * });
+ * console.log(outputFilePath);
+ * ```
+ */ 
 exports.imageToWebp = ({imagePath, quality = 70}) => {
     if(quality < 0 || quality > 100) {
         throw Error("quality value should be between the 0 to 100, 0 for High compression, 100 for less compression, defualt compression is 70.");
