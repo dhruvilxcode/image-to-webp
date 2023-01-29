@@ -21,14 +21,11 @@ grantPermission(cwebp());
  * @returns {Promise<string>} converted WebP file path 
  * @example
  * ```javascript
- * const outputFilePath = await convertToWebp.imageToWebp({
- *   imagePath: "./myimg.jpeg",
- *   quality: 80,
- * });
+ * const outputFilePath = await convertToWebp.imageToWebp("./myimg.jpeg",90);
  * console.log(outputFilePath);
  * ```
  */ 
-exports.imageToWebp = ({imagePath, quality = 70}) => {
+exports.imageToWebp = (imagePath, quality = 80) => {
     if(quality < 0 || quality > 100) {
         throw Error("quality value should be between the 0 to 100, 0 for High compression, 100 for less compression, defualt compression is 70.");
     }

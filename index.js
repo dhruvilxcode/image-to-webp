@@ -4,11 +4,7 @@ module.exports = convertToWebp;
 
 // (async function(){
 //     try {
-//         const outputFile = await convertToWebp.imageToWebp({
-//             imagePath: "./myimg.jpeg",
-//             quality: 80,
-//         });
-    
+//         const outputFile = await convertToWebp.imageToWebp("./myimg.jpeg",90);    
 //         console.log(outputFile);
 //     } catch (error) {
 //         console.error(error);

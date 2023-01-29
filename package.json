@@ -1,6 +1,6 @@
 {
   "name": "image-to-webp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A NodeJS Package to convert JPG, PNG images to WebP",
   "main": "index.js",
   "scripts": {
