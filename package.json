@@ -1,0 +1,23 @@
+{
+  "name": "image-to-webp",
+  "version": "1.0.0",
+  "description": "A NodeJS Package to convert JPG, PNG images to WebP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvilxcode/image-to-webp.git"
+  },
+  "keywords": [
+    "webp", "webp-convert", "image-to-webp", "convert-to-webp", "node-webp"
+  ],
+  "author": "dhruvilxcode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhruvilxcode/image-to-webp/issues"
+  },
+  "homepage": "https://github.com/dhruvilxcode/image-to-webp#readme"
+}
