@@ -1,5 +1,5 @@
 const convertToWebp = require("./src/convert-to-webp");
-
+module.exports = convertToWebp;
 // // Example:
 
 // (async function(){
