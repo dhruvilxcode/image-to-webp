@@ -2,17 +2,25 @@
 
 Convert Image (JPG/PNG) to WebP for good compression and better performance. Resulting in faster website load.
 
+[https://www.npmjs.com/package/image-to-webp](https://www.npmjs.com/package/image-to-webp)
+
+### Installation
+
+```bash
+npm i image-to-webp
+```
+
 ### Example
 
 ```javascript
 const { imageToWebp } = require("image-to-webp");
 
-const outputFile = await imageToWebp({
+const outputFilePath = await imageToWebp({
     imagePath: "./myimg.jpeg",
     quality: 80,
 });
 
-console.log(outputFile);
+console.log(outputFilePath);
 ```
 
 ### Options
