@@ -15,10 +15,7 @@ npm i image-to-webp
 ```javascript
 const { imageToWebp } = require("image-to-webp");
 
-const outputFilePath = await imageToWebp({
-    imagePath: "./myimg.jpeg",
-    quality: 80,
-});
+const outputFilePath = await imageToWebp("./myimg.jpeg",90); 
 
 console.log(outputFilePath);
 ```
